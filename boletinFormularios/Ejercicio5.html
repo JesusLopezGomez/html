@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 5</title>
+    </head>
+    <body>
+        <h3>Rellena tu CV</h3>
+        <form method="post" action="https://iesjacaranda.es/lmsgi/resultado.php">
+            <fieldset>
+                <legend>Datos personales</legend>
+                Provincia <br>
+                <select name="menu">
+                    <option value="0">- seleciona -</option>
+                    <option value="1">Sevilla</option>
+                    <option value="2">Málaga</option>
+                    <option value="3">Almería</option>
+                    <option valuer="4">Huelva</option>
+                </select>
+                <br>
+                <br>
+                Fecha de nacimiento <br>
+                <input type="number" name="dia" min="1" max="30"> de <select name="menu">
+                    <option value="0">- seleciona -</option>
+                    <option value="1">Enero</option>
+                    <option value="2">Febrero</option>
+                    <option value="3">Marzo</option>
+                    <option valuer="4">Abril</option>
+                    <option valuer="4">Mayo</option>
+                    <option valuer="4">Junio</option>
+                    <option valuer="4">Julio</option>
+                    <option valuer="4">Agosto</option>
+                    <option valuer="4">Septiembre</option>
+                    <option valuer="4">Octubre</option>
+                    <option valuer="4">Noviembre</option>
+                    <option valuer="4">Diciembre</option>
+                </select> de <input type="number" name="anyo" min="1" max="2023">
+                <br>
+                <br>
+                Temas de interés
+                <select name="menu" size="5"> <br>
+                    <option value="1">Administración de base de datos</option>
+                    <option value="2">Análisis y programación</option>
+                    <option value="3">Arquitectura</option>
+                    <option valuer="4">Calidad</option>
+                    <option valuer="5">ERP, CRM, Business Intelligence</option>
+                    <option valuer="6">Otro</option>
+                </select>
+            </fieldset>
+            <p align="center"><input type="submit" value="Enviar">&nbsp;<input type="reset" value="Borrar"></p>
+        </form>
+    </body>
+</html>

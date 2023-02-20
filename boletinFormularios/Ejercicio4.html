@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 4</title>
+    </head>
+    <body>
+        <h3>Datos seleccionables</h3>
+        <form method="post" action="https://iesjacaranda.es/lmsgi/resultado.php"> 
+        Sistema operativo <br>
+        <select name="menu">
+            <option value="0">- seleciona -</option>
+            <option value="1">Windows</option>
+            <option value="2">Mac</option>
+            <option value="3">Linux</option>
+            <option valuer="4">Otro</option>
+        </select>
+        <br>
+        <br>
+        Sistema operativo <br>
+        <select name="menu" size="4">
+            <option value="1">Windows</option>
+            <option value="2">Mac</option>
+            <option value="3">Linux</option>
+            <option valuer="4">Otro</option>
+        </select>
+        <br>
+        <br>
+        Sistema operativo <br> 
+        <select name="menu[]" size="4" multiple>
+            <option value="1">Windows</option>
+            <option value="2">Mac</option>
+            <option value="3">Linux</option>
+            <option valuer="4">Otro</option>
+        </select>
+        <p align="center"><input type="submit" value="Enviar">&nbsp;<input type="reset" value="Borrar"></p>
+        </form>
+    </body>
+</html>

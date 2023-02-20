@@ -1,26 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+    <head>
+        <title>Ejercicio1_formulario</title>
+        <meta charset="utf-8">
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <title>Formulario de Oferta de Empleo</title>
-</head>
+    <body bgcolor="A6C2B7">
+        <h1 align="center">Formulario de Oferta de empleo</h1>
+            <form method="post" action="mailto:someone@exemple.com?subject=Formulario">
+                <table border="1" align="center" width="1000">
+                    <tr>
+                        <td><p>Nombre: <input type="text" size="10" name="nombre" placeholder="Escribe algo"/></td>
+                        <td><p>Apellidos: <input type="text" size="10" name="apellidos" placeholder="Escribe algo"/></td>
+                        <td><p>Edad: <input type="text" size="10" name="edad" placeholder="Escribe algo"/></td>
+                        <td><p>DNI: <input type="text" size="9" name="dni" placeholder="Escribe algo"></td>
+                    </tr>
+                    <tr>
+                        <td><p>Cuidad: <input type="text" size="15" name="ciudad" placeholder="Escribe algo"></p></td>
+                        <td><p>Código Postal: <input type="text" size="5" name="codPostal" placeholder="Escribe algo"></p></td>
+                        <td><p>Direccion: <input type="text" size="9" name="direccion" placeholder="Escribe algo"></p></td>
+                        <td><p>Comunidad Autónoma: <input type="text" size="9" name="comunidad" placeholder="Escribe algo"> </p></td>
+                    </tr>
+                    <tr>
+                        <td><p></p>Teléfono de contacto: <input type="number" size="9" name="telefono" placeholder="Escribe algo"></p></td>
+                        <td><p>Correo eléctronico: <input type="text" size="15" name="mail" placeholder="Escribe algo"></p></td>
+                        <td><p>Sexo: <input type="radio" name="hm" value="h">Hombre <input type="radio" name="hm" value="m">Mujer</p></td>
+                        <td><p>Provincia: <select id="provincia" name="provincia">
+                            <option value="selecciona">Selecciona una provincia</option>
+                            <option value="sevilla">Sevilla</option>
+                            <option value="cordoba">Córdoba</option>
+                            <option value="cadiz">Cádiz</option>
+                            <option value="huelva">Huelva</option>
+                            <option value="malaga">Málaga</option>
+                            <option value="jaen">Jaén</option>
+                            <option value="granada">Granada</option>
+                            <option value="almeria">Almería</option>
+                        </select></p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><p>Nivel básico en los siguientes Idiomas: <input type="checkbox">Inglés <input type="checkbox">Francés <input type="checkbox">Alemán</p></td>
+                        <td>Nacionalidad: <input type="text" size="9" name="nacionalidad" placeholder="Escribe algo"></td>
+                    </tr>
+                </table>
+                <p align="center"><input type="submit" value="Enviar">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="reset" value="Borrar"></p>
+            </form>
+    </body>
 
-<body bgcolor="A6C2B7">
-    <h1 align="center">Formulario de Oferta de empleo</h1>
-    <br>
-    <form>
-        <p>Nombre: <input type="text" name="nombre" size="30" placeholder="Escriba su nombre"></p>
-        <p>Apellidos: <input type="text" name="apellidos" size="30" placeholder="Escriba sus dos apellidos"></p>
-        <p>DNI: <input type="text" name="dni" size="9" placeholder="Escriba su dni"></p>
-        <p>Provincia: <input type="text" name="provincia"></p>
-        <p>Código postal: <input type="text" name="codigoPostal"></p>
-        <p>Dirección: <input type="text" name="direccion"></p>
-        <p>Sexo: <input type="radio" name="hm" value="h">Hombre 
-        <input type="radio" name="hm" value="m">Mujer</p>
-        <p>Nivel básico en los siguientes Idiomas: <input type="checkbox">Inglés <input type="checkbox">Francés <input type="checkbox">Alemán</p>
-        <p><input type="submit" value="Enviar">
-        <input type="reset" value="Borrar"></p>
-    </form>
-</body>
-</html> 
+</html>

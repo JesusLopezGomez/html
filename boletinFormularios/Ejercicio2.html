@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 2</title>
+    </head>
+    <body>
+        <h3>Rellena tu CV</h3>
+        <form method="post" action="php/insertar_cv.php">
+            Nombre <br>
+            <input type='text' name='nombre' maxlength="15"><br>
+            Apellidos <br>
+            <input type='text' name='apellidos' size="25" maxlength="80"><br>
+            Contraseña <br>
+            <input type="password" name="contrasena" maxlength="15"><br>
+            DNI<br>
+            <input type='text' name='dni' size="10" maxlength="9"><br>
+            Sexo <br>
+            <input type='radio' name='sexo' value='1' checked> Hombre <br>
+            <input type='radio' name='sexo' value='2'> Mujer<br>
+            <br>
+            Incluir mi foto <input type="file" name="adjunto" accept=".jpg,.png" multiple />
+            <br>
+            <br>
+            <input type="checkbox" name="casilla" checked> Suscribirme al boletin de novedades
+            <br>
+            <br>
+            <input type="submit" value="Guardar cambios">&nbsp;<input type="reset" value="Borrar los datos introducidos">
+        </form>
+    </body>
+</html>
