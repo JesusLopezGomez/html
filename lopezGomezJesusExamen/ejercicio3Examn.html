@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio3Examen</title>
+    <style>
+        input:focus{background-color: blueviolet;color:white;}
+        #text{border: 2px solid blue;
+            border-radius: 20px;}
+        #number{border: 1px solid green;}
+    </style>
+</head>
+<body>
+    <form method="get" action="https://iesjacaranda.es/lmsgi/resultado.ph">
+        <label id="nombre">Nombre</label><input type="text" name="nombre" required size="30" id="text"><br>
+        <label id="mail">Correo electronico</label><input type="email" required size="30" id="text"><br>
+        <label id="url">Web</label><input type="url" placeholder="Url de tu web personal" size="30" id="text"><br>
+        <label id="fehca">Fecha</label><input type="date" id="number"><br>
+        <label id="tiempo">Tiempo</label><input type="time" id="number"><br>
+        <label id="fechaHora">FechaHora</label><input type="datetime-local" id="number"><br>
+        <label id="mes">Mes</label><input type="month" id="number"><br>
+        <lable id="semana">Semana</lable><input type="week" id="number"><br>
+        <label id="numeros">Numero</label><input type="number" max="10" min="-10" id="number"><br>
+        <label id="tlf">Telefono</label><input type="tel" size="30" id="text" id="number"><br>
+        <label id="datos">Subida datos</label><input type="file"><br>
+        <label id="color">Color favorito</label><input type="color"><br>
+        <label id="enviar"><input type="submit" value="enviar"></label>
+    </form>
+</body>
+</html>

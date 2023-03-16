@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>Ejercicio 12 - Formulario de alta</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<style type="text/css">
+    .rojo{color:red}
+    .titulo{font-weight: bold;}
+    #id{margin-top: 12%;}
+    #nombreApellidos:hover{background-color: yellow;}
+    #nombreApellidos{margin-bottom: 2%}
+    #apellido2:hover{border-color: red;}
+    #apellido1:hover{border-color: red;}
+    #nombre:hover{border-color: red;}
+    .email{margin-right: 3%;}
+    .telefono{margin-right: 1%;}
+    .movil{margin-right: 2.3%;}
+    #alta{margin-left: 12%;}
+    .movil,.email,.telefono,.direccion{font-weight: bold;}
+</style>
+</head>
+
+<body>
+<div id="contenedor">
+
+<h2>Formulario de alta</h2>
+
+<form method="post" action="#">
+    <label class="titulo" for="nombre">Nombre y apellidos <span class="requerido"><label class="rojo">*</label></span></label>
+    <div id="nombreApellidos">
+        <span>
+          <input id="nombre" name="nombre" value="" type="text" required/><br>
+          <label for="nombre">Nombre</label><br>
+        </span>
+        <span>
+            <input id="apellido1" name="primerApellido" value="" type="text" size="40" required /><br>
+            <label for="nombre">Primer Apellido</label><br>
+        </span>
+        <span>
+            <input id="apellido2" name="segundoApellido" value="" type="text" size="40" required/><br>
+            <label for="nombre">Segundo Apellido</label>
+        </span>
+    </div>
+
+    <label class="direccion" for="nombre">Direccion<span class="requerido"><label class="rojo">*</label></span></label>
+    <div id="direccion">
+        <span>
+            <input id="direccion" name="direccion" value="" type="text" size="40" required /><br>
+            <label for="direccion">Calle,numero,piso,puerta</label><br>
+          </span>
+          <span>
+              <input id="codigopostal" name="codigopostal" value="" type="text" size="10" required /><br>
+              <label for="codigopostal">Código Postal</label><br>
+          </span>
+          <span>
+            <input id="municipio" name="municipio" value="" type="text" size="10" required /><br>
+            <label for="municipio">Municipio</label><br>
+          </span>
+          <span>
+            <select>
+                <option value="provincia1">Provincia 1</option>
+                <option value="provincia2">Provincia 2</option>
+                <option value="provincia3">Provincia 3</option>
+            </select><br>
+            <label for="provincia">Provincia</label><br>
+          </span>
+          <span>
+            <select>
+                <option value="pais1">Pa�s 1</option>
+                <option value="pais2">Pa�s 2</option>
+                <option value="pais3">Pa�s 3</option>
+            </select><br>
+            <label for="pais">País</label>
+          </span>
+    </div>
+    <label class="email" for="nombre">Email<span class="requerido"><label class="rojo"></label></span></label><input type="text" required><br>
+    <label class="telefono" for="nombre">Teléfono<span class="requerido"><label class="rojo">*</label></span></label><input type="text" required><br>
+    <label class="movil" for="nombre">Móvil<span class="requerido"><label class="rojo">*</label></span></label><input type="text" required><br>
+    <input id="alta" type="submit" value="Darme de alta &rarr;" />
+</form>
+
+
+
+
+</body>
+</html>

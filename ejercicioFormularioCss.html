@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iDESWEB</title>
+    <style>
+        #nombre:focus{background-color: yellow}
+        #nombre:hover{background-color: red;}
+        body{align-content:center;}
+        h2,h1{font-family: Georgia, serif;text-shadow: 1px 1px 32px blueviolet;}
+        form{font-family: Arial, Helvetica, sans-serif;}
+        body{font-weight: bold;background-color: lightblue;}
+        fieldset{margin-bottom: 1%;}
+        #nombre{
+            border-style:solid;
+            border-width: 25px 10px 4px 35px;
+        }
+        #apellidos{
+            border: 3px solid red;
+            border-radius: 20px;
+        }
+        div{background-color: grey;padding: 3%;}
+        #siguiente{text-align:right;}
+        #anterior{float: left;}
+    </style>
+</head>
+<body>
+    <h1 align="center">iDESWEB</h1>
+    <h2 align="center" id="titulo">Formulario de registro</h2>
+    <form method="post" action="https://iesjacaranda.es/lmsgi/resultado.php">
+        <fieldset>
+            <legend>¿QUIÉN ERES?</legend>
+            Nombre<br>
+            <input type="text" name="nombre" id="nombre" size="25"><br>
+            Apellidos<br>
+            <input type="text" name="apellidos" size="25" id="apellidos"><br>
+            Correo electronico<br>
+            <input type="text" name="correoElectronico" size="25"><br>
+            Fecha nacimiento<br>
+            <input type="date" name="fechaNacimiento"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>¿DE DÓNDE ERES?</legend>
+            Ciudad<br>
+            <input type="text" name="ciudad" size="25"><br>
+            Código Postal<br>
+            <input type="text" name="codigoPostal" size="25"><br>
+            País<br>
+            <select>
+                <option>País</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>¿CÓMO QUIERES INICIAR SESIÓN?</legend>
+            Nombre de usuario<br>
+            <input type="text" name="nombreUsuario" size="25"><br>
+            Contraseña<br>
+            <input type="password" name="contraseña" size="25"><br>
+            Vueleve a escribir la contraseña<br>
+            <input type="password" name="contraseña" size="25"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>CONDICIONES DE REGISTRO</legend>
+            Deseo recibir ofertas de iDESWEB<br>
+            <input type="radio" name="option">Una vez al dia<input type="radio" name="option">Una vez a la semana<input type="radio" name="option">Una vez al mes
+            <br>
+            <input type="checkbox" name="botton">Acepto el acuerdo de servicios, la declaración de privacidad y la declaración de uso de cookies
+        </fieldset>
+
+        <p align="center"><input type="submit" value="Crear Cuenta" size="45"></p>
+    </form>
+    <div id="anterior">Anterior</div>
+    <div id="siguiente">Siguiente</div>
+    
+</body>
+</html>
