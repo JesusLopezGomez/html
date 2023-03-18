@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <!-- Mi css-->
+    <link rel="stylesheet" href="./css/main.css">
+    <!--FavIcon-->
+    <link rel="icon" type="image/png" href="./img/favicon.png"/>
+    <title>3D-Makers</title>
+  </head>
+  <body>
+   <!--------------------->
+    <!--ENCABEZADO-->
+    <!--------------------->
+    <header class="container-fluid bg-primary d-flex justify-content-center">
+        <p class="text-light mb-0 p.2 fs-6">Contacta con nosotros: +34 675 21 67 89</p>
+    </header>
+    <!--------------------->
+    <!--ENCABEZADO-->
+    <!--------------------->
+    <!--------------------->
+    <!--MENU-->
+    <!--------------------->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><span class="text-primary fs-5 fw-bold">3D<span class="text-secondary fs-5 fw-bold">-</span>Makers</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./general.html">General</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./novedades.html">Novedades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./problemasAyudas.html">Problemas/Ayudas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Únete a nosotros</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!--------------------->
+    <!--MENU-->
+    <!--------------------->
+    <!--Foto principal-->
+    <img src="img/fotoProblemasAyudas.png" class="img-fluid w-100 mx-auto pb-4" alt="..." id="fotoPrincipal">
+    <!--Foto principal-->
+    <!--Contenido3-->
+    <div class="container-fluid">
+    <p class="fs-7 w-50" id="texGeneral">Si estás cansado de que la boquilla de tu impresora 3d se atasque y no sabes cómo evitarlo, aquí te doy unos trucos para ambas cuestiones.
+
+        Primero te enseño unos consejos para intentar evitar y después, veremos juntos la forma más habitual de solucionarlos y seguir trabajando con tu impresora 3D sin problemas.</p>
+    <h2 class="fs-4 text-primary pt-2" id="titulosGeneral">Evitar atascos en la boquilla de tu impresora 3D</h2>
+    <div id="texGeneral">
+    <p class="fs-7 w-50">Lo primero y más importante que debes tener en cuenta para no atascar la boquilla o nozzle de tu impresora es respetar las temperaturas de impresión correctas que dependen de dos factores fundamentales:</p>
+
+        <ol type="1">
+            <li>El  tipo de filamento que utilizas (ABS, PETG, PLA…)</li> 
+            <li>La marca del filamento ya que cada una tiene especificaciones concretas</li>
+        </ol>
+        <p class="fs-7 w-50">Cada marca de filamento te dará siempre un margen de temperaturas con el que trabajar. Si aumentas o disminuyes la temperatura de fusión fuera de estos valores, probablemente tendrás problemas con tu impresión
+        
+        Dentro de los márgenes del fabricante para un tipo concreto de material, deberás encontrar el que mejor se adapte a tu impresora. Para ello, lo más habitual es realizar una torre de calibración de temperatura cuyo modelo puedes descargar en Thingiverse. Así sabrás la temperatura óptima a la que deberás trabajar.
+        
+        El valor de temperatura que obtengas será el óptimo de la marca para tu impresora. Por ello, si no cambias mucho de marca no será necesario que repitas el proceso cada vez que abras una bobina nueva.
+    </p>
+    </div>
+    <h2 class="fs-4 text-primary pt-2" id="titulosGeneral">¿Qué pasará si la temperatura es demasiado baja?</h2>
+    <p class="fs-7 w-50" id="texGeneral">En caso de que ajustes la impresión con una temperatura demasiado baja, el finamento no fluirá correctamente. Por ello, tendrás problemas como huecos en el modelo, grietas, problemas de adherencia de capas, etc.</p>
+    <h2 class="fs-4 text-primary pt-2" id="titulosGeneral">¿Y si la temperatura es demasiado alta?</h2>
+    <p class="fs-7 w-50" id="texGeneral">En este caso lo más común es que acabe cristalizando y se obstruya la boquilla.</p>
+    </div>
+    <!--Contenido3-->
+            <!--Barra lateral-->
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="botonExtrusor">Filamentos más top del mercado!</button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-primary" id="offcanvasRightLabel">Filamentos más top del mercado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <p class="fs-4 fw-bold">eSUN PLA+</p>
+                <p class="fs-7">eSUN es un fabricante chino con sede en Shenzhen. Sus distintos filamentos PLA abarcan una amplia gama de colores,
+                     así como un gran surtido de propiedades y acabados. Esto se consigue añadiendo algunos aditivos a la receta de PLA, por lo que esta gama se conoce como «PLA+».
+                </p>
+                <img src="https://i.all3dp.com/workers/images/fit=cover,w=1000,gravity=0.5x0.5,format=auto/wp-content/uploads/2022/07/21140507/eSUN-PLA.jpg" class="img-fluid w-100 mx-auto pb-4" alt="..." id="fotoExtrusor">
+                <p class="fs-4 fw-bold">Inland PLA+</p>
+                <p class="fs-7">Inland PLA+ es un producto de MicroCenter, una empresa informática de Ohio, 
+                    en EE. UU. Esta marca de PLA+ es ideal para impresiones estéticas, prototipos, juguetes de escritorio,
+                     aplicaciones de baja tensión y otros productos de consumo.
+                </p>
+                <img src="https://i.all3dp.com/workers/images/fit=cover,w=1000,gravity=0.5x0.5,format=auto/wp-content/uploads/2022/07/21114213/611532_989269_01_front_zoom.jpg" class="img-fluid w-100 mx-auto pb-4" alt="..." id="fotoExtrusor">
+            </div>
+            </div>
+    <!--Barra lateral-->
+    <!--Footer-->
+        <div class="container-fluid text-light pt-3">
+        
+            <div class="row p-5 pb-2 bg-primary">
+              <div class="col-xs-12 col-md6 col-lg-3">
+                <p class="fs-7">Expertos en impresión 3D</p>
+                <img src="img/logo_transparent.png" class="img-fluid" alt="..." width="200px">
+              </div>
+              <div class="col-xs-12 col-md6 col-lg-3">
+                <p class="fs-7">Links</p>
+                <p class="fs-8 text-white-50"><a class="nav-link" aria-current="page" href="general.html">General</a></p>
+                <p class="fs-8 text-white-50"><a class="nav-link" aria-current="page" href="./novedades.html">Novedades</a></p>
+                <p class="fs-8 text-white-50"><a class="nav-link" aria-current="page" href="./problemasAyudas.html">Problemas/Ayudas</a></p>
+                <p class="fs-8 text-white-50"><a class="nav-link" aria-current="page" href="./nosotros.html">Únete a nosotros</a></p>
+              </div>
+              <div class="col-xs-12 col-md6 col-lg-3">
+                <p class="fs-7">Empresas colaboradoras</p>
+                <p class="fs-8 text-white-50">Winkle</p>
+                <p class="fs-8 text-white-50">Anycubic</p>
+                <p class="fs-8 text-white-50">Sunlu</p>
+                <p class="fs-8 text-white-50">Creality</p>
+                <p class="fs-8 text-white-50">GreenTech</p>
+                <p class="fs-8 text-white-50">Prusa</p>
+              </div>
+              <div class="col-xs-12 col-md6 col-lg-3">
+                <p class="fs-7">Contacto</p>
+                <p class="fs-8 text-white-50">Instagram</p>
+                <p class="fs-8 text-white-50">Facebook</p>
+                <p class="fs-8 text-white-50">Twitter</p>
+              </div>
+    
+              <div class="cols-xs-12 pt-3">
+                <p class="fs-7 text-center">Copyright - All rights reserved © 2023 </p>
+              </div> 
+            </div>
+    
+          </div>
+    <!--Footer-->
+  </body>
+</html>

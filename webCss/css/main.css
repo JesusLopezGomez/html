@@ -52,3 +52,18 @@ body{
     background-color:gainsboro;
 }
 
+#titulosGeneral,#texGeneral{
+    margin-left: 5%;
+}
+
+#botonExtrusor{
+    margin-left: 5%;
+}
+
+#introText{
+    margin-left: 5%;
+}
+
+#enviar{
+    margin-left: 5.5%;
+}
