@@ -4,23 +4,33 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css" integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51" crossorigin="anonymous">
-    <!-- Mi css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <!-- Mi css-->
     <link rel="stylesheet" href="./css/main.css">
-    <title>Fan zone Betis</title>
+    <!--FavIcon-->
+    <link rel="icon" type="image/png" href="./img/favicon.png"/>
+    <title>3D-Makers</title>
   </head>
   <body>
     <!--------------------->
     <!--ENCABEZADO-->
     <!--------------------->
-    <header class="container-fluid bg-success d-flex justify-content-center">
+    <header class="container-fluid bg-primary d-flex justify-content-center">
         <p class="text-light mb-0 p.2 fs-6">Contacta con nosotros: +34 675 21 67 89</p>
     </header>
+    <!--------------------->
+    <!--ENCABEZADO-->
+    <!--------------------->
+
+    <!--------------------->
+    <!--MENU-->
+    <!--------------------->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><span class="text-success fs-5 fw-bold"> Fan zone Betis</span></a>
+          <a class="navbar-brand" href="./index.html"><span class="text-primary fs-5 fw-bold">3D<span class="text-secondary fs-5 fw-bold">-</span>Makers</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -38,43 +48,123 @@
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
+              <button class="btn btn-outline-primary" type="submit">Buscar</button>
             </form>
           </div>
         </div>
       </nav>
+    <!--------------------->
+    <!--MENU-->
+    <!--------------------->
 
-      <!-------------------------->
-      <!--CARUSEL FOTOS-->
-      <!-------------------------->
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/fotoPlantilla.jpeg" class="container-md" alt="" id="fotoPlantilla">
+       <!--Foto principal-->
+       <img src="img/impresion3d.jpg" class="img-fluid w-100 mx-auto" alt="..." id="fotoPrincipal">
+      <!--Foto principal-->
+
+      <h1 align="center" id="titulo">¡Conviértete en un experto de la impresión 3D, accesorios, filamentos!</h1>
+
+
+      <!--Tabla de tarjetas de inicio-->
+      <table width="500px" align="center" id="cards">
+        <tr>
+          <td>
+            <div class="card" style="width: 18rem;">
+            <img src="./img/general.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Articulos generales</h5>
+              <p class="card-text">Información sobre impresión 3D generales. Todo lo que buscas para tu impresora 3d</p>
+              <a href="#" class="btn btn-primary">Ver</a>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="./img/ganadorCopaDelRey.jpeg" class="d-block w-100" alt="" id="fotoCopa">
+        </td>
+          <td>
+            <div class="card" style="width: 18rem;">
+            <img src="./img/novedades.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Novedades</h5>
+              <p class="card-text">La impresión 3D avanza a marchas forzadas, así que siempre hay interesantes novedades</p>
+              <a href="#" class="btn btn-primary">Ver</a>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="./img/fotoTresJugadores.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
+        </td>
+          <td>
+            <div class="card" style="width: 18rem;">
+              <img src="./img/problemas.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Problemas/Ayudas impresión 3D</h5>
+                <p class="card-text">Te ayudamos con tus problemas de impresión 3D más frecuentes que nos vamos encontrando</p>
+                <a href="#" class="btn btn-primary">Ver</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <!--Tabla de tarjetas de inicio-->
+
+      <!--Preguntas frecuentes-->
+      <div class="mx-auto"><h3 align="left" id="preguntasTexto" class="text-primary">Preguntas frecuentes sobre Impresión 3D</h3>
+      <p id="cabeceraTextoPreguntas" class="w-75">El mundo de la impresión 3D está lleno de preguntas y temas interesantes a tratar, 
+      pero a continuación puedes consultar las preguntas más frecuentes que recibimos en 3D-Makers. Si necesitas plantearnos alguna, 
+      recuerda que puedes hacerlo sin problema!</p>
+      <ul class="list-group w-75" id="listaPreguntas">
+        <li class="list-group-item" id="preguntas">¿Qué es una impresora 3D?</li>
+        <li class="list-group-item">Una impresora 3D es una sencilla máquina que mediante fusión de diferentes tipos de plásticos,
+           es capaz de crear objetos tridimensionales. Los objetos los crea capa a capa desde la parte baja a la superior,
+           por lo que el proceso puede durar muchas horas o incluso días, dependiendo de la calidad que busquemos y el tamaño del objeto.</li>
+        <li class="list-group-item"id="preguntas">¿Cuál es la mejor impresora 3D?</li>
+        <li class="list-group-item">Es una pregunta compleja ya que hay diferentes gamas en función del tipo de usuario. Para los aficionados,
+           las marcas más frecuentes son Creality o Prusa, aunque hay otras muchas interesantes en el mercado disponibles a precios razonables.</li>
+        <li class="list-group-item"id="preguntas">¿Es difícil aprender impresión 3D?</li>
+        <li class="list-group-item">No es un hobby difícil, pero requiere dedicarle horas a ir aprendiendo. En la impresión 3D pueden surgirte muchos fallos
+           o pequeñas complicaciones que irás aprendiendo a solucionar poco a poco. Cualquier persona con un poco de maña y ganas puede iniciarse en la impresión 3D sin problemas.</li>
+        <li class="list-group-item"id="preguntas">¿Cómo puedo aprender impresión 3D?</li>
+        <li class="list-group-item">Aprender impresión 3D es un camino largo basado en hacer pruebas e ir afrontando nuevas situaciones. En internet encontrarás muchos canales de Youtube en los que podrás ver tutoriales y ayudas. 
+          También en 3D-Makers intentamos ayudarte a resolver dudas y aprender poco a poco, por lo que siempre puedes consultarnos desde los comentarios de las diferentes publicaciones.</li>
+      </ul>
       </div>
+      <!--Preguntas frecuentes-->
 
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
-    crossorigin="anonymous"></script>
+      <!--Footer-->
+      <div class="container-fluid text-light">
+        
+        <div class="row p-5 pb-2 bg-primary">
+          <div class="col-xs-12 col-md6 col-lg-3">
+            <p class="fs-7">Expertos en impresión 3D</p>
+            <img src="img/logo_transparent.png" class="img-fluid" alt="..." width="200px">
+          </div>
+          <div class="col-xs-12 col-md6 col-lg-3">
+            <p class="fs-7">Links</p>
+            <p class="fs-8 text-white-50">General</p>
+            <p class="fs-8 text-white-50">Novedades</p>
+            <p class="fs-8 text-white-50">Problemas/Ayudas</p>
+          </div>
+          <div class="col-xs-12 col-md6 col-lg-3">
+            <p class="fs-7">Empresas colaboradoras</p>
+            <p class="fs-8 text-white-50">Winkle</p>
+            <p class="fs-8 text-white-50">Anycubic</p>
+            <p class="fs-8 text-white-50">Sunlu</p>
+            <p class="fs-8 text-white-50">Creality</p>
+            <p class="fs-8 text-white-50">GreenTech</p>
+            <p class="fs-8 text-white-50">Prusa</p>
+          </div>
+          <div class="col-xs-12 col-md6 col-lg-3">
+            <p class="fs-7">Contacto</p>
+            <p class="fs-8 text-white-50">Instagram</p>
+            <p class="fs-8 text-white-50">Facebook</p>
+            <p class="fs-8 text-white-50">Twitter</p>
+          </div>
+
+          <div class="cols-xs-12 pt-3">
+            <p class="fs-7 text-center">Copyright - All rights reserved © 2023 </p>
+          </div> 
+        </div>
+
+
+      </div>
+      <!--Footer-->
+
+
 
   </body>
 </html>
