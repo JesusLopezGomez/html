@@ -1,4 +1,4 @@
-const ENLACE = document.getElementById("link");
+const ENLACE = document.getElementById("enlace");
 
 ENLACE.addEventListener('click',function(){
     let oculto = document.getElementById('oc');
